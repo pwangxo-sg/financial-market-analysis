@@ -3,6 +3,7 @@ name: financial-market-analysis
 description: >
   A-share, fund, QDII, gold, Asia-Pacific index and cross-border asset macro /
   policy / geo / rule-based market analysis framework for DeepSeek Harness.
+  DISCLAIMER: for learning/research only, NOT investment advice.
   Works for market moves, fund analysis, holdings strategy, daily reports,
   hot-theme scanning, decision tracking, historical backtest and data-degrade
   fallback. Configurable portfolio & Feishu delivery; no personal data baked in.
