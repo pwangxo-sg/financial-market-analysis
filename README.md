@@ -84,6 +84,17 @@
 - 定时日报可用 dsh --profile headless "$(cat rendered/morning.txt)" 触发（见 examples/launchd/）。
 - 如需把数据目录放到任意位置，设 MARKET_INTEL_ROOT 即可，所有脚本均通过 _lib.ROOT 定位。
 
+## 赞助与定制
+
+喜欢这个项目？欢迎通过以下方式支持：
+
+- **GitHub Sponsors**：[Sponsor me](https://github.com/sponsors/pwangxo-sg) —— 点击这里赞助
+- **定制服务**：如果你需要针对自己的持仓 / 数据源 / 投递渠道做定制（把技能接到你的飞书群、加新的招标或行情数据源、调整报告风格），欢迎邮件联系：
+  - 邮箱：**p.wangxo@gmail.com**（邮件标题建议带 [定制] 前缀）
+- 定制内容示例：私有数据源接入、多账户持仓管理、专属报告模板、定时任务部署（macOS launchd / Linux systemd / cron）。
+
+> 注意：本项目为开源学习项目，Sponsors 与定制服务均与投资建议无关，详见顶部免责声明。
+
 ## License
 
 MIT
