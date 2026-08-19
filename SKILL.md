@@ -59,13 +59,15 @@ triggers:
 
 ## 数据源
 
-- 泰康 TIPVS（POST `tipvs.mobile.taikang.com/api/.../getTipTodoPublicMethodPost`）
+> 以下「采购/招标公告类」数据源仅用于行业景气与订单需求研究（如观察企业采购活跃度、电网设备招标同比作为行业指标），与投标代理 / 投标监控 / 竞标服务无关。
+
+- 泰康 TIPVS（POST `tipvs.mobile.taikang.com/api/.../getTipTodoPublicMethodPost`） —— 采购公告类（行业研究）
 - AIIB（GET `rfxrestapi.aiib.org:9090/publicapi/v1/jsonp/rfxopen`，timestamp+MD5 认证；
-  status 全为 awarded，按 startDate 倒序 + responseDeadline>now 过滤）
-- 奇瑞采购（POST `ebd.mychery.com/cms/api/dynamicData/queryContentPage`；报名或报价任一过期即过滤）
-- 吉利电子招标（GET `glzb.geely.com/gpmp/notice/listnotice`；`publishtime/endtime` 为毫秒时间戳）
-- UNGM（POST `www.ungm.org/Public/Notice/Search`，需先 GET 拿 cookie；NoticeTypes 用 checkbox id）
-- 世界银行 WDS（GET `search.worldbank.org/api/v2/wds?format=json`；字段名 `projn/count`）
+  status 全为 awarded，按 startDate 倒序 + responseDeadline>now 过滤） —— 采购公告类（行业研究）
+- 奇瑞采购（POST `ebd.mychery.com/cms/api/dynamicData/queryContentPage`；报名或报价任一过期即过滤） —— 采购公告类（行业研究）
+- 吉利电子招标（GET `glzb.geely.com/gpmp/notice/listnotice`；`publishtime/endtime` 为毫秒时间戳） —— 采购公告类（行业研究）
+- UNGM（POST `www.ungm.org/Public/Notice/Search`，需先 GET 拿 cookie；NoticeTypes 用 checkbox id） —— 采购公告类（行业研究）
+- 世界银行 WDS（GET `search.worldbank.org/api/v2/wds?format=json`；字段名 `projn/count`） —— 采购公告类（行业研究）
 - 更多见 `references/data-source-gotchas.md` / `data-retrieval-apis.md`。
 
 ## 报告模板

@@ -305,7 +305,7 @@ def build_full_indicators(start_date=None, end_date=None):
         # 缺历史 → 静态 fallback (避免全 0 触发)
         inds.setdefault("ai_capex_yoy", 0.65)  # 估值快照
         inds.setdefault("central_bank_net_buying_tons", 95)  # 2025 月均
-        inds.setdefault("sgcc_bidding_yoy", 0.15)
+        inds.setdefault("sgcc_bidding_yoy", 0.15)  # 国网年度招标同比（行业景气度指标，行业研究用，非投标服务）
         inds.setdefault("power_equipment_export_yoy", 0.18)
         inds.setdefault("fed_funds_change_3m", -0.25)
         inds.setdefault("global_mfg_pmi", 50.2)

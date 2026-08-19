@@ -154,7 +154,7 @@ RULES = [
     # ============== 025857 电网设备ETF ==============
     {
         "rule_id": "GRID_INVEST_01",
-        "description": "电网: 国网年度招标同比 > 20% → 加仓",
+        "description": "电网: 国网年度招标同比 > 20% → 加仓（行业景气度指标，非投标服务）",
         "target_codes": ["025857"],
         "signal_type": "add",
         "confidence": 75,
@@ -162,7 +162,7 @@ RULES = [
             {"name": "sgcc_bidding_yoy", "operator": ">", "value": 0.20},
         ],
         "hold_days": 180,
-        "rationale": "国网招标是电网设备景气度领先指标",
+        "rationale": "国网招标同比是电网设备行业景气度领先指标（行业研究，与投标代理服务无关）",
         "expected_win_rate": 0.75,
         "lookback_days": 90,
     },
@@ -197,7 +197,7 @@ RULES = [
     },
     {
         "rule_id": "GRID_PULLBACK_01",
-        "description": "电网: 近 1 月回撤 > 8% + 国网招标未减 → 加仓 (逆向)",
+        "description": "电网: 近 1 月回撤 > 8% + 国网招标未减 → 加仓 (逆向)（行业景气度指标，非投标服务）",
         "target_codes": ["025857"],
         "signal_type": "add",
         "confidence": 72,
