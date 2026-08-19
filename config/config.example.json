@@ -1,0 +1,22 @@
+{
+  "market_intel_root": "~/.dsh/market_intel",
+  "feishu": {
+    "app_id_env": "FEISHU_APP_ID",
+    "app_secret_env": "FEISHU_APP_SECRET",
+    "domain": "https://open.feishu.cn",
+    "deliver_chat_ids": ["oc_xxxxxxxxxxxxx"]
+  },
+  "portfolio": {
+    "total_capital": 500000,
+    "positions": {
+      "012752": {"name": "示例纳指QDII", "amount": 10000, "proxy": "QQQ"},
+      "022653": {"name": "示例黄金ETF", "amount": 10000, "proxy": "GLD"}
+    },
+    "cash_equivalent": 410000
+  },
+  "reports": {
+    "morning": {"hour": 9, "minute": 0, "weekdays": [1,2,3,4,5]},
+    "evening": {"hour": 16, "minute": 0, "weekdays": [1,2,3,4,5]}
+  },
+  "decision_expires_days": 30
+}

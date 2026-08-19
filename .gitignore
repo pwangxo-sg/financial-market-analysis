@@ -1,0 +1,9 @@
+config/config.json
+rendered/
+__pycache__/
+*.pyc
+data/
+db/
+logs/
+state/
+.pyreqs/
